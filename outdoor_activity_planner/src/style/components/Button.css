@@ -1,0 +1,80 @@
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.ui-button:hover,
+.ui-button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.ui-button:focus-visible {
+  outline: 3px solid rgba(149, 213, 178, 0.35);
+  outline-offset: 2px;
+}
+
+.ui-button--sm {
+  min-height: 2.5rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.92rem;
+}
+
+.ui-button--md {
+  min-height: 3rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 0.96rem;
+}
+
+.ui-button--primary {
+  background: var(--color-primary);
+  color: #f8f9fa;
+  box-shadow: var(--shadow-soft);
+}
+
+.ui-button--primary:hover,
+.ui-button--primary:focus-visible {
+  background: #34785a;
+  box-shadow: var(--shadow-hover);
+}
+
+.ui-button--secondary {
+  background: rgba(149, 213, 178, 0.24);
+  color: var(--color-primary);
+  border: 1px solid rgba(45, 106, 79, 0.14);
+}
+
+.ui-button--secondary:hover,
+.ui-button--secondary:focus-visible {
+  background: rgba(149, 213, 178, 0.38);
+}
+
+.ui-button--ghost {
+  background: #ffffff;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.ui-button--ghost:hover,
+.ui-button--ghost:focus-visible {
+  background: #edf6f1;
+  border-color: rgba(149, 213, 178, 0.95);
+  color: var(--color-primary);
+}
+
+.ui-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

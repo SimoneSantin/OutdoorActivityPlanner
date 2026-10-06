@@ -1,0 +1,66 @@
+.ui-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 1rem;
+  background: rgba(248, 249, 250, 0.94);
+  color: var(--color-primary);
+  border: 1px solid rgba(222, 226, 230, 0.95);
+  box-shadow: var(--shadow-soft);
+  font-size: 1.15rem;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+  backdrop-filter: blur(10px);
+}
+
+.ui-icon-button:hover,
+.ui-icon-button:focus-visible {
+  transform: translateY(-1px);
+  background: #edf6f1;
+  color: #245640;
+  border-color: var(--color-primary-soft);
+  box-shadow: var(--shadow-hover);
+}
+
+.ui-icon-button:focus-visible {
+  outline: 3px solid rgba(149, 213, 178, 0.35);
+  outline-offset: 2px;
+}
+
+.ui-icon-button--md {
+  min-height: 3rem;
+}
+
+.ui-icon-button--sm {
+  min-height: 2.5rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.9rem;
+}
+
+.ui-icon-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+
+.ui-icon-button__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ui-icon-button__label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+}

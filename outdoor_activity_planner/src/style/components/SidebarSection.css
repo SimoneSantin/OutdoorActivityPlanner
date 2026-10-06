@@ -1,0 +1,31 @@
+.sidebar-section {
+  padding: 1.15rem;
+  border-radius: var(--radius-lg);
+  background: rgba(248, 249, 250, 0.88);
+  border: 1px solid rgba(222, 226, 230, 0.95);
+  box-shadow: var(--shadow-soft);
+}
+
+.sidebar-section__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-section__header h2 {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  line-height: 1.2;
+}
+
+.sidebar-section__header p {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 720px) {
+  .sidebar-section {
+    padding: 1rem;
+  }
+}

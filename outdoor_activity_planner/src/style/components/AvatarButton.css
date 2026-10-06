@@ -1,0 +1,112 @@
+.ui-avatar-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-height: 3.4rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.55rem;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8f7 100%);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.ui-avatar-button:hover,
+.ui-avatar-button:focus-visible {
+  transform: translateY(-1px);
+  background: linear-gradient(180deg, #f8fcfa 0%, #eaf5ef 100%);
+  border-color: rgba(149, 213, 178, 0.95);
+  box-shadow: var(--shadow-hover);
+  color: var(--color-primary);
+}
+
+.ui-avatar-button:focus-visible {
+  outline: 3px solid rgba(149, 213, 178, 0.35);
+  outline-offset: 2px;
+}
+
+.ui-avatar-button__fallback,
+.ui-avatar-button__image {
+  width: 2.55rem;
+  height: 2.55rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ui-avatar-button__fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #40916c 100%);
+  color: #f8f9fa;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.ui-avatar-button__image {
+  object-fit: cover;
+}
+
+.ui-avatar-button__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  line-height: 1.15;
+}
+
+.ui-avatar-button__user {
+  max-width: 11rem;
+  overflow: hidden;
+  color: inherit;
+  font-size: 0.94rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ui-avatar-button__meta {
+  color: var(--color-text-muted);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.ui-avatar-button__chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--color-text-muted);
+  transition:
+    transform 180ms ease,
+    color 180ms ease;
+}
+
+.ui-avatar-button__chevron svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ui-avatar-button:hover .ui-avatar-button__chevron,
+.ui-avatar-button:focus-visible .ui-avatar-button__chevron {
+  transform: translateX(1px);
+  color: var(--color-primary);
+}
+
+@media (max-width: 720px) {
+  .ui-avatar-button {
+    padding-right: 0.55rem;
+  }
+
+  .ui-avatar-button__text,
+  .ui-avatar-button__chevron {
+    display: none;
+  }
+}

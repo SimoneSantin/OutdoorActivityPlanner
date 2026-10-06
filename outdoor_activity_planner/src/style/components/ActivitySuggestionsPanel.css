@@ -1,0 +1,34 @@
+.activity-suggestions-panel__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.activity-suggestions-panel__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, #ffffff 0%, #f3f6f4 100%);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.activity-suggestions-panel__meta {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.activity-suggestions-panel__card h3 {
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.activity-suggestions-panel__card p {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}

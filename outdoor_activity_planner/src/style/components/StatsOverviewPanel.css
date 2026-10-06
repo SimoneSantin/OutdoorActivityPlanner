@@ -1,0 +1,32 @@
+.stats-overview-panel__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.stats-overview-panel__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.stats-overview-panel__card strong {
+  color: var(--color-primary);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.stats-overview-panel__card span {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .stats-overview-panel__grid {
+    grid-template-columns: 1fr;
+  }
+}

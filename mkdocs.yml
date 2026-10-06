@@ -1,0 +1,9 @@
+site_name: Outdoor Activity Planner
+
+nav:
+  - Home: index.md
+  - Autenticazione: autentication.md
+  - Map: map.md
+
+theme:
+  name: material
